@@ -39,3 +39,17 @@ $fast-transanto-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.container-pages {
+  // padding: 0 85px;
+  width: min(90%); // specifica ca largimea trebuie sa fie minim 90% din ecran
+  margin-inline: auto; // aliniaza central tot
+ }
+
+
+ @media only screen and (min-width: 1300px) {
+   .container-pages {
+     width: min(70%);
+    }
+ }

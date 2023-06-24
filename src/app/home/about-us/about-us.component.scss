@@ -1,11 +1,43 @@
-.container-about {
-  .container-information {
-    width: 515px;
-    .container-image {
-      width: 400px;
-      img {
-        width: 100%;
+.background-color {
+  background-color: #30475E;
+  padding: 3rem!important;
+  .container-about {
+    width: min(90%);
+    margin-inline: auto;
+
+    h3 {
+      color: #ffff;
+    }
+    .container-information {
+      width: 100%;
+      margin: auto;
+      margin-inline: auto;
+      .container-image {
+        max-width: 25rem;
+        img {
+          width: 100%;
+        }
+      }
+      .container-info {
+        max-width: 30rem;
+        color: #ffff;
       }
     }
+  }
+}
+
+
+@media only screen and (max-width: 1130px) {
+  .background-color {
+    padding: 1rem!important;
+
+    .container-information {
+      flex-direction: column!important;
+      justify-content: center!important;
+
+      .container-image {
+        margin-bottom: 4rem;
+      }
+     }
   }
 }
