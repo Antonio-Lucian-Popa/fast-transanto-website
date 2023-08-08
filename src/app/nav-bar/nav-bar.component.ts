@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
+  mobileMenuOpen = false;
+
+  openMobileMenu(): void {
+    this.mobileMenuOpen = true;
+  }
+
+  closeMobileMenu(): void {
+    this.mobileMenuOpen = false;
+  }
+
 }
