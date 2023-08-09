@@ -10,6 +10,12 @@ import { OurClientsComponent } from './home/our-clients/our-clients.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { CompanyServicesComponent } from './home/company-services/company-services.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { ContactComponent } from './home/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from  '@angular/common/http';
+import { NoFoundPageComponent } from './home/no-found-page/no-found-page.component';
+import { MaintananceComponent } from './home/maintanance/maintanance.component';
+import { MaintananceInterceptor } from './services/maintanance.interceptor';
 
 
 @NgModule({
@@ -21,13 +27,20 @@ import { FooterComponent } from './home/footer/footer.component';
     OurClientsComponent,
     TestimonialsComponent,
     CompanyServicesComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent,
+    NoFoundPageComponent,
+    MaintananceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: MaintananceInterceptor, multi: true }
+  ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],

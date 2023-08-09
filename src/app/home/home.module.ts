@@ -12,7 +12,6 @@ import {MatCardModule} from '@angular/material/card';
     CommonModule,
     HomeRoutingModule,
     MatCardModule
-
   ]
 })
 export class HomeModule { }
