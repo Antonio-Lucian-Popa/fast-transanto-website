@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
 import { OurClientsComponent } from './home/our-clients/our-clients.component';
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { CompanyServicesComponent } from './home/company-services/company-services.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { OurClientsComponent } from './home/our-clients/our-clients.component';
     HomeComponent,
     AboutUsComponent,
     NavBarComponent,
-    OurClientsComponent
+    OurClientsComponent,
+    TestimonialsComponent,
+    CompanyServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
