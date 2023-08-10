@@ -16,6 +16,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from  '@angular/common/http';
 import { NoFoundPageComponent } from './home/no-found-page/no-found-page.component';
 import { MaintananceComponent } from './home/maintanance/maintanance.component';
 import { MaintananceInterceptor } from './services/maintanance.interceptor';
+import { ImagesComponent } from './home/images/images.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MaintananceInterceptor } from './services/maintanance.interceptor';
     FooterComponent,
     ContactComponent,
     NoFoundPageComponent,
-    MaintananceComponent
+    MaintananceComponent,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,

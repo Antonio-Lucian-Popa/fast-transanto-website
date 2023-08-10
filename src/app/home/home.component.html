@@ -1,6 +1,6 @@
 
 <app-nav-bar></app-nav-bar>
-<div class="relative isolate px-6 pt-14 lg:px-8">
+<div class="relative isolate px-6 pt-14 lg:px-8" id="home">
   <!-- <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
     <div
       class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -10,7 +10,7 @@
   <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
       <div class="container-info mb-8">
         <h3 class="text-4xl font-semibold mb-3">Soluții rapide și eficiente pentru transportul mărfurilor tale</h3>
-        <p>Suntem o firmă specializată în transportul mărfurilor, oferind soluții rapide, sigure și eficiente pentru nevoile tale</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Suntem o firmă specializată în transportul mărfurilor, oferind soluții rapide, sigure și eficiente pentru nevoile tale</p>
        </div>
        <div class="container-image">
         <img src="../assets/img/presentation-vehicles.png" alt="presentation vehicles of the company">
@@ -29,6 +29,13 @@
 <app-about-us></app-about-us>
 <app-our-clients></app-our-clients>
 <app-company-services></app-company-services>
+<app-images></app-images>
 <app-testimonials></app-testimonials>
 <app-contact></app-contact>
 <app-footer></app-footer>
+
+<button *ngIf="showScrollButton" (click)="scrollToTop()" class="fixed bottom-4 right-4 bg-blue-500 text-white rounded-full p-3 shadow-lg">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>

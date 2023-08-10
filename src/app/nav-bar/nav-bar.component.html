@@ -52,11 +52,11 @@
             To: "opacity-0 translate-y-1"
         -->
 
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Despre noi</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Servicii</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Recenzii</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+      <a (click)="scrollToSection('home')" class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">Home</a>
+      <a (click)="scrollToSection('about')" class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">Despre noi</a>
+      <a (click)="scrollToSection('services')" class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">Servicii</a>
+      <a (click)="scrollToSection('testimonials')" class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">Recenzii</a>
+      <a (click)="scrollToSection('contact')" class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">Contact</a>
     </div>
     <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
